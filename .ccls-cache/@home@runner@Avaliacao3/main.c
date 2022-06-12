@@ -6,7 +6,7 @@
 
 int main()
 {
-  char str[50], orig, dest;
+  char *str[50], orig, dest;
   char *resposta[50];
   int occ;
 
