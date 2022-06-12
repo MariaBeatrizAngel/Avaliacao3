@@ -5,7 +5,7 @@
 #ifndef myLibrary
 #define myLibrary
 
-char *teste(char text[50], char orig, char dest){
+char *changeLetter(char text[50], char orig, char dest){
   char resposta[50];
   
   for (int i=0; i < 50; i++){
@@ -18,6 +18,18 @@ char *teste(char text[50], char orig, char dest){
 
   fflush(stdin);
   return resposta;
+}
+
+int countOcc(char text[50], char orig){
+  int j = 0;
+  
+  for (int i=0; i < 50; i++){
+    if (text[i] == orig){
+      j++;
+    }
+  }
+
+  return j;
 }
 
 #endif

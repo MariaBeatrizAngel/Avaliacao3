@@ -7,8 +7,8 @@
 int main()
 {
   char str[50], orig, dest;
-
   char *resposta[50];
+  int occ;
 
   printf("Digite qual palavra deseja criptografar: ");
   scanf(" %s", str);
@@ -17,8 +17,11 @@ int main()
   printf("Letra destino: ");
   scanf(" %c", &dest);
   
-  *resposta = teste(str, orig, dest);
-  printf("Resposta: %s", *resposta);
+  *resposta = changeLetter(str, orig, dest);
+  occ = countOcc(str, orig);
+  printf("\nPalavra original: %s", str);
+  printf("\nResposta: %s", *resposta);
+  printf("\nOcorrencias: %d", occ);
 
   return 0;
 }
