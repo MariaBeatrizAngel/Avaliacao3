@@ -19,6 +19,7 @@ int main()
   
   *resposta = changeLetter(str, orig, dest);
   occ = countOcc(str, orig);
+  
   printf("\nPalavra original: %s", str);
   printf("\nResposta: %s", *resposta);
   printf("\nOcorrencias: %d", occ);
